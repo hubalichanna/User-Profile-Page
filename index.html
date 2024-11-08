@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Profile Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="container">
+    
+    <!-- Sidebar with Profile Photo and Basic Information -->
+    <aside class="sidebar">
+      <div class="profile-photo">
+        <img src="WhatsApp Image 2024-09-28 at 12.02.42 PM.jpeg" alt="Profile Photo" id="profile-img">
+      </div>
+      <input type="file" id="profile-photo-upload" onchange="updateProfilePhoto(event)" style="display: none;">
+      <button onclick="document.getElementById('profile-photo-upload').click()">Change Profile Photo</button>
+      <h2>Hub Ali Channa</h2>
+      <p class="job-title">MERN Developer</p>
+      <p class="quote">I'm a MERN stack developer with extensive experience in building dynamic web applications using MongoDB, Express.js, React, and Node.js. I specialize in creating responsive, high-performance solutions that integrate front-end and back-end services through RESTful APIs, prioritizing clean code and scalability.</p>
+      
+      <button  class="theme-toggle" >🌙</button>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <!-- Personal Information Section -->
+      <section class="card personal-info">
+        <h3>Personal Information</h3>
+        <p>Hi! I'm Hub Ali Channa, a passionate MERN stack developer with a keen interest in full-stack development. I strive to build efficient and user-friendly web applications.</p>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section class="card work-experience">
+        <h3>Work Experience</h3>
+        <p>I have worked with several tech startups, focusing on building web applications, optimizing performance, and ensuring clean code and seamless integration.</p>
+      </section>
+
+      <!-- Education Section -->
+      <section class="card education">
+        <h3>Education</h3>
+        <p>I graduated with a Bachelor's degree in Computer Systems Engineering  from the Mehran University of Engineering And Technology Jamshoro, where I focused on Web Development and database management.</p>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="card skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="card projects">
+        <h3>Projects</h3>
+        <ul>
+          <li><strong>Project 1:</strong> E-Commerce Website - A fully functional e-commerce platform developed using MERN stack with Stripe payment integration.</li>
+          <li><strong>Project 2:</strong> AI Chatbot - An AI-driven chatbot integrated into a website to provide automated customer support.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
